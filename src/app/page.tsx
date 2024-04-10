@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 
-import useNetworkStatusAndConnectivity from '@/hooks/useNetworkStatusAndConnectivity';
+import { useNetworkStatusAndConnectivity } from '@/hooks';
 
 export default function Home() {
   const { isOnline, connectionType, hasInternetAccess } = useNetworkStatusAndConnectivity();

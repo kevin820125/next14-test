@@ -1,9 +1,8 @@
-"use client"
 import { useEffect, useState } from 'react';
 
 async function checkInternetConnectivity() {
   try {
-    const response = await fetch("https://www.google.com/favicon.ico?_=" + new Date().getTime(), {
+    const response = await fetch("https://www.google.com/favicon.ico", {
       mode: 'no-cors',
       cache: 'no-store'
     });
